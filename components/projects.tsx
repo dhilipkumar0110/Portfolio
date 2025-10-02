@@ -5,53 +5,62 @@ import { ExternalLink, Github, Building2, User } from "lucide-react"
 
 const companyProjects = [
   {
-    title: "Enterprise CRM System",
-    company: "TechCorp Solutions",
-    duration: "2023 - Present",
+    title: "PHI Scrubber",
+    company: "Key Software Inc.",
+    duration: "2024 - 2025",
     description:
-      "Led development of a comprehensive CRM system handling 10,000+ customers with real-time analytics, automated workflows, and integration with multiple third-party services.",
-    image: "/enterprise-crm-dashboard.png",
-    technologies: ["React", "Node.js", "PostgreSQL", "Redis", "AWS", "TypeScript"],
+      "Developed a PHI (Protected Health Information) Scrubbing application to identify and anonymize sensitive data across large databases. The solution applied configurable scrub rules for each PHI data type and ensured compliance with data privacy requirements. The system included a client-friendly Angular UI, MS SQL Server backend, and a console-based engine responsible for the scrubbing process.",
+    image: "/phi-scrubber.png",
+    technologies: ["C#", "ASP.NET Core", "Angular", "MS SQL Server"],
     achievements: [
-      "Improved customer response time by 40%",
-      "Reduced manual processes by 60%",
-      "Handled 1M+ transactions monthly",
+      "Led end-to-end development from requirement gathering to deployment",
+      "Designed and implemented a client-attractive UI tailored to business needs",
+      "Built the scrubbing engine as a console application to process large datasets efficiently",
+      "Implemented task pause and resume functionality for long-running scrubbing operations"
     ],
-    role: "Senior Full Stack Developer",
-    teamSize: "5 developers",
-    liveUrl: "#", // Company projects might not have public URLs
-    githubUrl: "#", // Private repositories
-    featured: true,
-  },
-  {
-    title: "E-Learning Platform",
-    company: "EduTech Inc",
-    duration: "2022 - 2023",
-    description:
-      "Developed a scalable e-learning platform with video streaming, interactive quizzes, progress tracking, and payment integration serving 50,000+ students.",
-    image: "/e-learning-platform-interface.png",
-    technologies: ["Next.js", "Express.js", "MongoDB", "Stripe", "AWS S3", "Socket.io"],
-    achievements: ["Achieved 99.9% uptime", "Processed $2M+ in payments", "Supported 10,000 concurrent users"],
-    role: "Full Stack Developer",
-    teamSize: "8 developers",
+    role: "Software Engineer",
+    teamSize: "3 developers",
     liveUrl: "#",
     githubUrl: "#",
-    featured: true,
+    featured: true
   },
   {
-    title: "Inventory Management System",
-    company: "RetailMax",
-    duration: "2021 - 2022",
+    title: "Data Quality Tool",
+    company: "Key Software Inc.",
+    duration: "2024 - 2025",
     description:
-      "Built a real-time inventory management system with barcode scanning, automated reordering, and comprehensive reporting for multi-location retail chain.",
-    image: "/inventory-management-dashboard.png",
-    technologies: ["Vue.js", "Python", "Django", "PostgreSQL", "Docker"],
-    achievements: ["Reduced inventory errors by 85%", "Automated 70% of reordering process", "Managed 100,000+ SKUs"],
-    role: "Frontend Developer",
+      "Developed a custom Data Quality Tool to identify and monitor data inconsistencies across different data sources. The application allowed configuration-driven validation and provided an attractive dashboard for reporting, while the engine was powered by Python using the SODA library.",
+    image: "/data-quality-tool.png",
+    technologies: ["C#", "ASP.NET", "Python", "SODA (Python Library)", "My SQL"],
+    achievements: [
+      "Took complete responsibility and ownership in delivering the project successfully",
+      "Designed and developed the end-to-end solution including backend, frontend, and engine",
+      "Built an intuitive dashboard to visualize data quality metrics and results"
+    ],
+    role: "Software Engineer",
+    teamSize: "2 developers",
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: true
+  },
+  {
+    title: "Blazor Diagram Component",
+    company: "Syncfusion",
+    duration: "2022 - 2024",
+    description:
+      "Contributed to the development of the Blazor Diagram Component, focusing on implementing user-requested features, resolving tickets, and enhancing overall performance. Also automated unit test cases with Playwright to improve testing reliability.",
+    image: "/blazor-diagram-component.png",
+    technologies: ["C#", "Blazor", ".NET"],
+    achievements: [
+      "Developed and delivered multiple user-requested features in the Diagram component",
+      "Resolved customer-reported tickets with effective debugging and fixes",
+      "Automated unit test cases using Playwright, improving test coverage and efficiency"
+    ],
+    role: "Junior Software Developer",
     teamSize: "4 developers",
-    liveUrl: "#",
+    liveUrl: "https://blazor.syncfusion.com/documentation/diagram/overview",
     githubUrl: "#",
-    featured: false,
+    featured: true
   },
 ]
 
@@ -113,13 +122,13 @@ function ProjectCard({ project, type }: { project: any; type: "company" | "perso
     <Card
       className={`overflow-hidden group hover:shadow-lg transition-all duration-300 h-full flex flex-col ${project.featured ? "ring-2 ring-primary/20" : ""}`}
     >
-      <div className="aspect-video overflow-hidden">
+      {/* <div className="aspect-video overflow-hidden">
         <img
           src={project.image || "/placeholder.svg"}
           alt={project.title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
-      </div>
+      </div> */}
 
       <div className="p-6 space-y-4 flex-1 flex flex-col">
         <div className="space-y-2 flex-1">
@@ -182,7 +191,7 @@ function ProjectCard({ project, type }: { project: any; type: "company" | "perso
             ))}
           </div>
 
-          <div className="flex items-center gap-3">
+          {/* <div className="flex items-center gap-3">
             <Button size="sm" asChild>
               <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-3 w-3 mr-2" />
@@ -195,7 +204,7 @@ function ProjectCard({ project, type }: { project: any; type: "company" | "perso
                 Code
               </a>
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </Card>
@@ -226,7 +235,7 @@ export function Projects() {
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <div className="flex items-center gap-3 mb-8">
             <User className="h-6 w-6 text-primary" />
             <h3 className="text-2xl font-semibold text-foreground">Personal Projects</h3>
@@ -236,7 +245,7 @@ export function Projects() {
               <ProjectCard key={index} project={project} type="personal" />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

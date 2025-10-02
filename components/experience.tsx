@@ -3,53 +3,37 @@ import { Badge } from "@/components/ui/badge"
 import { ExternalLink } from "lucide-react"
 
 const experiences = [
+ 
   {
-    period: "2024 — PRESENT",
-    title: "Senior Full-Stack Developer",
-    company: "TechCorp Inc.",
-    location: "San Francisco, CA",
+    period: "Jan 2024 — PRESENT",
+    title: "Software Engineer",
+    company: "Key Software Inc.",
+    location: "Chennai, India",
     type: "Full-time",
-    description:
-      "Build and maintain critical components used to construct TechCorp's frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility and performance optimization.",
+    description: "Working as a full-stack developer across multiple projects, contributing to all phases of the software development lifecycle including requirement gathering, design, development, testing, and deployment. Responsible for building scalable and maintainable applications using modern .NET and Angular technologies.",
     keyAchievements: [
-      "Led frontend architecture redesign improving performance by 40%",
-      "Mentored 3 junior developers and established code review processes",
-      "Implemented comprehensive testing strategies reducing bugs by 60%",
+      "Delivered end-to-end solutions by handling backend, frontend, and database layers",
+      "Worked on multiple projects simultaneously, ensuring quality and timely delivery",
+      "Collaborated closely with stakeholders to gather requirements and translate them into technical solutions",
+      "Improved deployment and testing workflows to streamline release cycles"
     ],
-    technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "AWS", "Docker", "GraphQL"],
-    link: "https://techcorp.com",
+    technologies: ["ASP.NET", "ASP.NET Core", "Angular", "MS SQL Server", "C#", ".NET"],
+    link: "https://www.keysoftwareinc.com/"
   },
   {
-    period: "2022 — 2024",
-    title: "Full-Stack Developer",
-    company: "StartupXYZ",
-    location: "Remote",
+    period: "Nov 2022 — Jan 2024",
+    title: "Junior Software Developer",
+    company: "Syncfusion",
+    location: "Chennai, India",
     type: "Full-time",
-    description:
-      "Developed and shipped highly interactive web applications for both B2B and B2C audiences. Led the frontend architecture redesign that improved performance by 40% and implemented comprehensive testing strategies.",
+    description: "Contributed to the development and testing of Syncfusion’s Blazor components, focusing on delivering reliable and feature-rich solutions. Worked closely with the team to build user-requested features and ensure quality through automation.",
     keyAchievements: [
-      "Built scalable web applications serving 50,000+ daily active users",
-      "Reduced application load time by 45% through optimization techniques",
-      "Collaborated with design team to implement pixel-perfect UI components",
+      "Developed and delivered user-requested features in the Diagram component",
+      "Resolved multiple customer tickets with effective debugging and solutions",
+      "Automated unit test cases using Playwright, improving test efficiency and reliability"
     ],
-    technologies: ["Next.js", "Python", "Django", "MongoDB", "Docker", "Redis", "Stripe API"],
-    link: "https://startupxyz.com",
-  },
-  {
-    period: "2021 — 2022",
-    title: "Frontend Developer",
-    company: "Creative Agency Pro",
-    location: "New York, NY",
-    type: "Full-time",
-    description:
-      "Worked with a team of designers and developers to build pixel-perfect, responsive websites and web applications for various clients. Specialized in creating smooth animations and interactive user experiences.",
-    keyAchievements: [
-      "Delivered 15+ client projects with 100% on-time completion rate",
-      "Increased client satisfaction scores by 35% through improved UX",
-      "Established responsive design standards adopted company-wide",
-    ],
-    technologies: ["Vue.js", "SCSS", "Figma", "WordPress", "PHP", "GSAP", "Three.js"],
-    link: "https://creativeagencypro.com",
+    technologies: ["C#", "Blazor", "Playwright", ".NET"],
+    link: "https://www.syncfusion.com/"
   },
 ]
 
